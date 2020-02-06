@@ -1,31 +1,39 @@
-.boton{
-    font-size:16px;
-    display : inline-block;
-    text-decoration:none;
-    padding :10 5px;
-    border : 1px solid #000000;
-    color: #ffffff;
-    background: #c3c3c3;
+/*{
+    margin:0;
+    padding:0;
+
+}*/
+
+body{
+
+    background: #c3c3c3;   
+
 }
-.boton:hover {
-    border: 0px;
-    opacity: 0.7;
-    }
-    
-.boton.azul {
-        background: #3498db;
-        }
-.boton.rojo {
-        background: #e74c3c;
-        }
-.boton.verde {
-        background: #1abc9c;
-        }
-        
-.boton.mediano {
-        font-size: 18px;
-                }
-            
-.boton.redondo {
-                border-radius: 30%;
-                        }
+.menu {
+    list-style: none;/*elimina los puntos de lista por defecto*/
+    background: #03a9f0;
+    /*padding: 5px 5px;*/
+    max-width: 1024px;
+    margin: auto ;
+}
+
+.menu li{
+    display: inline-block;/* ordenar en linea horizontal menu*/
+    padding: 10px;
+}
+.menu li a{
+    color:#ffffff;
+    text-decoration:none ;/*quitar el subrayado*/
+    padding:10px; /* margen interno a un cuadro*/
+    /*border:1px solid black; generamos el borde del recuadro*/
+}
+
+.menu li a:hover{
+
+    text-decoration:none ;/*quitar el subrayado*/
+    background:blue;
+    color: #000000;
+    text-transform:uppercase;
+    border-bottom: 2px solid black;
+
+}
