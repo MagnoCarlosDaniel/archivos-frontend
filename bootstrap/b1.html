@@ -1,83 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>b1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
 </head>
-<body>  
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Pirmera practica</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
-    <h1>esto es un ejemplo de bootstrap</h1>
-    <div class="alert alert-primary" role="alert">
-        esto es un ejemplo de una alerta usando bootstrap
-      </div>
-      <div class="alert alert-dark" role="alert">
-        esto es un ejemplo de una alerta usando bootstrap
-      </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
 
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <form>
-        <div class="form-group row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="carloscmasmas@gmail.com">
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white"> Textos y fuentes dentro de contenedores..</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Menu</h4>
+                <ul class="list-unstyled">
+                  <li><a href="index.html" class="text-white">ir al inicio</a></li>
+                  <li><a href="https://www.facebook.com" class="text-white">acerca de...</a></li>
+                  <li><a href="https://www.gmail.com" class="text-white">Envianos un correo</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="form-group row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword">
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center"> 
+              <strong>Bootstrap 1</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
-      </form>
-    <h1>ejemplo de cabecera con bootstrap <span class="badge badge-secondary">algo nuevo!!</span></h1>
-<!--<h2>Example heading <span class="badge badge-secondary">New</span></h2>
-<h3>Example heading <span class="badge badge-secondary">New</span></h3>
-<h4>Example heading <span class="badge badge-secondary">New</span></h4>
-<h5>Example heading <span class="badge badge-secondary">New</span></h5>
-<h6>Example heading <span class="badge badge-secondary">New</span></h6>-->
-
-<button type="button" class="btn btn-primary">HOLA</button>
-<!--<button type="button" class="btn btn-secondary">esto</button>
-<button type="button" class="btn btn-success">ES</button>
-<button type="button" class="btn btn-danger">UN</button>
-<button type="button" class="btn btn-warning">EJEMPLO</button>
-<button type="button" class="btn btn-info">DE BOTONES</button>
-<button type="button" class="btn btn-light">poR</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button>-->
-
+      </header>
+      <main role="main">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Pirmera practica</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+      <h1>esto es un ejemplo de bootstrap</h1>
+      <div class="alert alert-primary" role="alert">
+          esto es un ejemplo de una alerta usando bootstrap
+        </div>
+        <div class="alert alert-dark" role="alert">
+          esto es un ejemplo de una alerta usando bootstrap
+        </div>
+  
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="carloscmasmas@gmail.com">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+        </form>
+      <h1>ejemplo de cabecera con bootstrap <span class="badge badge-secondary">algo nuevo!!</span></h1>
+  <!--<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+  <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+  <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+  <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+  <h6>Example heading <span class="badge badge-secondary">New</span></h6>-->
+  
+  <button type="button" class="btn btn-primary">HOLA</button>
+  <!--<button type="button" class="btn btn-secondary">esto</button>
+  <button type="button" class="btn btn-success">ES</button>
+  <button type="button" class="btn btn-danger">UN</button>
+  <button type="button" class="btn btn-warning">EJEMPLO</button>
+  <button type="button" class="btn btn-info">DE BOTONES</button>
+  <button type="button" class="btn btn-light">poR</button>
+  <button type="button" class="btn btn-dark">Dark</button>
+  <button type="button" class="btn btn-link">Link</button>-->
+  
+    <br><br>
+  
+  <br></be><a href="index.html" class="btn-dark">un boton hecho con un hipervinculo</a>
+  
   <br><br>
-
-<br></be><a href="index.html" class="btn-dark">un boton hecho con un hipervinculo</a>
-
-<br><br>
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-secondary active">
-      <input type="radio" name="options" id="option1" checked> Active
-    </label>
-    <label class="btn btn-secondary">
-      <input type="radio" name="options" id="option2"> Radio
-    </label>
-    <label class="btn btn-secondary">
-      <input type="radio" name="options" id="option3"> Radio
-    </label>
-  </div>
-<br><br>
-  <div class="spinner-grow" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-
-
-</body>
-</html>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" checked> Active
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2"> Radio
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3"> Radio
+      </label>
+    </div>
+  <br><br>
+    <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  
+             
+      
+<footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Regresar arriba</a>
+      </p>
+      <p>Carlos Daniel Olvera Magno&copy;</p>
+   
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+      </main>
+ 
