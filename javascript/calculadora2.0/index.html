@@ -76,6 +76,9 @@
         <div class="col-mb-1">
           <button class="btn btn-primary" id="btn-igual">=</button>
         </div>
+        <div class="col-mb-1">
+          <button class="btn btn-primary" id="btn-div">/</button>
+        </div>
       </div>
       <!-- form-row -->
     </div>
@@ -150,6 +153,13 @@ $("#btn-por").click(function(event){
   operacion=3;
   $("#resultado").val("");
 });
+$("#btn-div").click(function(event){
+  event.preventDefault();
+  let valor = $("#resultado").val();
+  numero=parseFloat(valor);
+  operacion=4;
+  $("#resultado").val("");
+});
 
 
 $("#btn-punto").click(function(event){
@@ -191,7 +201,12 @@ $("#btn-igual").click(function(event){
     case 3:
     res =numero * parseFloat(valor);
     $("#resultado").val(res);
-    break; 
+    break;
+    case 4:
+    res =numero / parseFloat(valor);
+    $("#resultado").val(res);
+    break;
+
     default:
     }
   });
