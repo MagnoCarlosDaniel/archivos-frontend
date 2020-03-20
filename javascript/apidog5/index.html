@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Usando DOG API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div><h1 align = "center">Hola bienvenido al generador de imagenes random <i class="fas fa-paw"></i></i> </h1>
+    <div><h1 align = "center">de perritos utilizado DOG API <i class="fas fa-paw"></i></i> </h1></div></div>
+    <div  align="center" class="container">
+      <div class="col-md-12">
+        <button id="buscar" class="btn btn-primary"><i class="fas fa-paw"></i> Perrito al azar</i></button>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12" id="resultado"></div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      jQuery(document).ready(function() {
+        var apikey = "14919fcd";
+
+        $("#buscar").click(function(event) {
+			    $("#resultado").empty();  
+        });
+        
+        $("#buscar").click(function(){
+          $.get(
+            "https://dog.ceo/api/breeds/image/random",{
+              apikey: apikey,
+              r: "json",
+              s: $("#pelicula").val()
+            },
+            function(data,status){
+                
+                var $message="";
+                var message=data.message;
+
+                var resultado=
+               '<div class="card" style="width: 18rem;"><img  src="'+message+'" class="card-img-top" alt="..."> </div>';
+              //  '<div class"card" style="width: 18rem;"><img  src="'+message+'" class="img-circle" alt="..."> </div>';
+                
+                $("#resultado").append(resultado);
+            }
+          );
+        });
+        
+});
+           
+    </script>
+  </body>
+</html>
